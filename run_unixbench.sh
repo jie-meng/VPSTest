@@ -21,13 +21,13 @@ echo 'go to working path'
 cd byte-unixbench-master/UnixBench
 
 echo 'Run ...'
-./Run > ouput_unixbench.txt
+./Run > output_unixbench.txt
 
 cd ..
 cd ..
-cp byte-unixbench-master/UnixBench/ouput_unixbench.txt .
+cp byte-unixbench-master/UnixBench/output_unixbench.txt .
 
-echo "generate output ${PWD}/ouput_unixbench.txt"
+echo "generate output ${PWD}/output_unixbench.txt"
 
 #clear
 rm -rf byte-unixbench-master
