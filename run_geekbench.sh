@@ -30,6 +30,5 @@ echo "generate output ${PWD}/output_geekbench.html"
 #clear
 rm -rf Geekbench-4.2.2-Linux
 rm Geekbench-4.2.2-Linux.tar.gz
-rm geekbench_output
 
 echo '\ndone!'
