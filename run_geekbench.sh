@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ $# -lt 1 ]; then
+    echo 'You should provide a name!'
+    exit -1
+fi
+
 echo 'clear working path'
 rm -rf Geekbench-4.2.2-Linux
 
@@ -23,12 +28,12 @@ echo 'Make geekbench4 ouput ...'
 wget -O output_geekbench.html $(grep -m 1 'https://browser\.geekbench\.com/v4/cpu/' geekbench_output)
 
 cd ..
-cp Geekbench-4.2.2-Linux/output_geekbench.html .
 
-echo "generate output ${PWD}/output_geekbench.html"
+cp Geekbench-4.2.2-Linux/output_geekbench.html ./output_geekbench_$1.html
+
+echo "generate output ${PWD}/output_geekbench_$1.html"
 
 #clear
 rm -rf Geekbench-4.2.2-Linux
-rm Geekbench-4.2.2-Linux.tar.gz
 
 echo '\ndone!'

@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ $# -lt 1 ]; then
+    echo 'You should provide a name!'
+    exit -1
+fi
+
 echo 'clear working path'
 rm master.zip
 rm -rf byte-unixbench-master
@@ -25,9 +30,9 @@ echo 'Run ...'
 
 cd ..
 cd ..
-cp byte-unixbench-master/UnixBench/output_unixbench.txt .
+cp byte-unixbench-master/UnixBench/output_unixbench.txt ./output_unixbench_$1.txt
 
-echo "generate output ${PWD}/output_unixbench.txt"
+echo "generate output ${PWD}/output_unixbench_$1.txt"
 
 #clear
 rm -rf byte-unixbench-master
