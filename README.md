@@ -8,4 +8,6 @@ Environment: debian, ubuntu
 
 - ssh to an instance and execute: `git clone https://github.com/jie-meng/VPSTest.git`
 
-- execute `./run.sh <name>`  (name is a name whatever you want to give. e.g. If you execute `./run.sh ec2.t2.micro`, you might got output data such as **output\_unixbench\_ec2.t2.micro.txt**
+- execute `chmod a+x ./*.sh`
+
+- execute `./run.sh <name>`  (name is a name whatever you want to give. e.g. If you execute `./run.sh ec2.t2.micro`, you might got output data such as *output\_unixbench\_ec2.t2.micro.txt*
