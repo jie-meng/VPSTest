@@ -10,4 +10,4 @@ Environment: debian, ubuntu
 
 - execute `cd VPSTest`
 
-- execute `./run.sh <name>`  (name is a name whatever you want to give. e.g. If you execute `./run.sh ec2.t2.micro`, you might got output data such as *output\_unixbench\_ec2.t2.micro.txt*
+- execute `./run_all.sh <name>`  (name is a name whatever you want to give. e.g. If you execute `./run.sh ec2.t2.micro`, you might got output data such as **output\_unixbench\_ec2.t2.micro.txt**
