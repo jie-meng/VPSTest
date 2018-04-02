@@ -22,7 +22,7 @@ echo 'go to working path'
 cd Geekbench-4.2.2-Linux/
 
 echo 'run geekbench4 and save ouput to geekbench_output ...'
-./geekbench4 > geekbench_output
+./geekbench4 | tee geekbench_output
 
 echo 'Make geekbench4 ouput ...'
 wget -O output_geekbench.html $(grep -m 1 'https://browser\.geekbench\.com/v4/cpu/' geekbench_output)

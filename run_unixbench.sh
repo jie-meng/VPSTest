@@ -26,7 +26,7 @@ echo 'go to working path'
 cd byte-unixbench-master/UnixBench
 
 echo 'Run ...'
-./Run > output_unixbench.txt
+./Run | tee output_unixbench.txt
 
 cd ..
 cd ..
