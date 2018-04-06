@@ -10,6 +10,9 @@ class UnixBenchPlotter(object):
         self.__vpsList = []
         self.__isMultiCore = False
 
+    def getName(self):
+        return self.__name
+
     def setIsMultiCore(self, multiOrSingle):
         self.__isMultiCore = multiOrSingle
 

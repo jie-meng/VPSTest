@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import os
 from plotlib.unixbenchplotter import UnixBenchPlotter
 
 if __name__ == "__main__":
@@ -10,4 +11,6 @@ if __name__ == "__main__":
     unixbench_plotter.addFile('/Users/jiemeng/aws/output/output_unixbench_aws.ec2.m5.large.txt')
     unixbench_plotter.plot()
 
+    os.rename('output.png', unixbench_plotter.getName() + '.png')
+    print('Rename output.png to {}'.format(unixbench_plotter.getName() + '.png'))
     print('done!')
