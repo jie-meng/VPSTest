@@ -101,4 +101,5 @@ ENV/
 .mypy_cache/
 
 #output
-ouput_*
+output_*
+output.png
