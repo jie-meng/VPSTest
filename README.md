@@ -11,3 +11,18 @@ Environment: debian, ubuntu
 - execute `cd VPSTest`
 
 - execute `./run_all.sh <name>`  (name is a name whatever you want to give. e.g. If you execute `./run_all.sh ec2.t2.micro`, you might got output data such as **output\_unixbench\_ec2.t2.micro.txt**
+
+## Statistics plotting
+
+- Install npm
+
+- npm install -g phantomjs-prebuilt
+
+- Install python3
+
+- pip3 install pyecharts
+
+- pip3 install pyecharts-snapshot
+
+- Edit plot_unixbench.py and run `python3 plot_unixbench.py`
+

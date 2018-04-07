@@ -102,4 +102,4 @@ ENV/
 
 #output
 output_*
-output.png
+*.png
