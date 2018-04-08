@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-import plotlib.output_parser.unixbench as UnixbenchParser
+import plotlib.output_parser.geekbench as GeekbenchParser
 import plotlib.plotter as plotter
 
-class UnixBenchPlotter(object):
+class GeekBenchPlotter(object):
 
     def __init__(self, name):
         self.__name = name
@@ -20,11 +20,11 @@ class UnixBenchPlotter(object):
         return self.__isMultiCore
 
     def addFile(self, fileName):
-        self.__vpsList.append(UnixbenchParser.parse(fileName))
+        self.__vpsList.append(GeekbenchParser.parse(fileName))
 
     def plot(self):
         ls = []
         for x in self.__vpsList:
             ls.append(x[1] if self.isMultiCore() else x[0])
 
-        plotter.plot(self.__name, ls, 7)
+        plotter.plot(self.__name, ls, 10)
