@@ -13,9 +13,9 @@ def plot(title, vpsList):
 
     for vps in vpsList:
         values = []
-        for attr in attrs:
+        for attr in reversed(attrs):
             values.append(vps.getData(attr))
-        bar.add(vps.getName(), attrs, values, is_convert = True)
+        bar.add(vps.getName(), list(reversed(attrs)), values, is_convert = True, yaxis_label_textsize = 7)
 
     bar.render()
     os.system('snapshot render.html')
