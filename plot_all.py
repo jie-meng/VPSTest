@@ -42,7 +42,7 @@ def findFiles(path, pred = None, ls = None):
 
 if __name__ == "__main__":
     path = input('Please input vps test output files directory:\n')
-    print('\n')
+    print('{0}\n'.format(path))
 
     # unixbench
     unixbench_files = findFiles(path, lambda f : 'unixbench' in f and f.endswith('.txt'))

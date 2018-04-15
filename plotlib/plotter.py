@@ -8,7 +8,7 @@ def plot(title, vpsList, labelSize):
     if len(vpsList) == 0:
         return
 
-    bar = Bar(title)
+    bar = Bar(title, title_top = 'bottom')
     attrs = vpsList[0].getAttrs()
 
     for vps in vpsList:
